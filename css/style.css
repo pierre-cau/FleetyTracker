@@ -2,8 +2,16 @@
     width: 35%;
     background-size: contain;
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+
+    /* on centre le logo horizontalement */
     margin-left: auto;
     margin-right: auto;
+
+    /* on centre le logo verticalement */
+    margin-top: 6%;
+
+}
+/* on fait tourner le logo de 360 degrés */
+.logo img {
+    animation: rotation 3s infinite linear;
 }
