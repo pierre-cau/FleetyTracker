@@ -1,5 +1,6 @@
 .logo {
-    width: 35%;
+    width: 38%;
+    background-color: aquamarine;
     background-size: contain;
     display: block;
 
@@ -12,12 +13,5 @@
 
 }
 
-#g2396{
-    /* on le met en vert */
-    color: #00FF00;
 
-}
-.display-inline{
-    color: #00FF00;
 
-}
