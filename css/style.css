@@ -11,7 +11,13 @@
     margin-top: 6%;
 
 }
-/* on fait tourner le logo de 360 degrés */
-.logo img {
-    animation: rotation 3s infinite linear;
+
+#g2396{
+    /* on le met en vert */
+    color: #00FF00;
+
+}
+.display-inline{
+    color: #00FF00;
+
 }
