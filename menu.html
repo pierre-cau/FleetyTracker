@@ -20,22 +20,12 @@
 <script>
     let TIMEOUT = 1000; // timeout before quitting the animation
 
-    function startAnimation() {
-        let logo = document.querySelector('.logo');
-        let logoDoc = logo.contentDocument;
-        let logoPaths = logoDoc.querySelectorAll('path');
-        let logoPathsLength = logoPaths.length;
-        let i = 0;
-
-        function nextStep() {
-            logoPaths[i].style.fill = '#000';
-            i++;
-            if (i < logoPathsLength) {
-                setTimeout(nextStep, TIMEOUT);
-            }
+    function clock_to_quit() {
+        setTimeout(quit, TIMEOUT);
+        function quit() {
+            window.location.href = "index.html";
         }
 
-        nextStep();
     }
 
 </script>
