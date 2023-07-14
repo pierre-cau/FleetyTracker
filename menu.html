@@ -11,8 +11,6 @@
     <object data="images\Logo_FleetyTrack\BG_blanc65\Logo_fleetytrack_BGW65_round.svg" class = "logo"
             width="100%"
             type="image/svg+xml">
-
-    <img src="images\Logo_FleetyTrack\BG_blanc65\Logo_fleetytrack_BGW65_round.png">
     </object>
         
        
@@ -21,9 +19,12 @@
     let TIMEOUT = 5000; // timeout before quitting the animation
     let TARGET = "index.html"; // target page to redirect to
     
+
+    // on fait tourner le logo
+    let logo = document.querySelector(".logo");
+
     // on lance la fonction clock_to_quit au bout de TIMEOUT ms
     //clock_to_quit();
-
     function clock_to_quit() {
         setTimeout(quit, TIMEOUT);
         function quit() {
@@ -32,15 +33,7 @@
 
     }
 
-    // on fait tourner le logo
-    let logo = document.querySelector(".logo");
-    logo.addEventListener("click", function() {
-        console.log("click");
-        logo.classList.add("rotate");
-        setTimeout(function() {
-            logo.classList.remove("rotate");
-        }, 1000);
-    });
+
 
 </script>
 </html>
