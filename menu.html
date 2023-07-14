@@ -5,6 +5,7 @@
     <title>FleetyTracker</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images\Logo_FleetyTrack\BG_blanc65\Logo_fleetytrack_BGW65_round.svg" width="100%">
+    <link rel="script" href="js/animation.js">
 </head>
 <body>
     <object data="images\Logo_FleetyTrack\BG_blanc65\Logo_fleetytrack_BGW65_round.svg" class = "logo"
@@ -14,6 +15,29 @@
     <img src="images\Logo_FleetyTrack\BG_blanc65\Logo_fleetytrack_BGW65_round.png">
     </object>
         
-        
+       
+</body>
+<script>
+    let TIMEOUT = 1000; // timeout before quitting the animation
+
+    function startAnimation() {
+        let logo = document.querySelector('.logo');
+        let logoDoc = logo.contentDocument;
+        let logoPaths = logoDoc.querySelectorAll('path');
+        let logoPathsLength = logoPaths.length;
+        let i = 0;
+
+        function nextStep() {
+            logoPaths[i].style.fill = '#000';
+            i++;
+            if (i < logoPathsLength) {
+                setTimeout(nextStep, TIMEOUT);
+            }
+        }
+
+        nextStep();
+    }
+
+</script>
 </html>
     
