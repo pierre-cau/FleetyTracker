@@ -1,6 +1,6 @@
 .logo {
     width: 38%;
-    background-color: aquamarine;
+    background-color: rgb(247, 255, 205);
     background-size: contain;
     display: block;
 
@@ -9,12 +9,11 @@
     margin-right: auto;
 
     /* on centre le logo verticalement */
-    margin-top: 15%;
+    margin-top: 6%;
 
 }
 
-
-
-
-
-
+.logo svg {
+    background-color: rgb(64, 234, 38);
+}
+    
